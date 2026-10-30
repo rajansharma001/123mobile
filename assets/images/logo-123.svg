@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" fill="none">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+  <!-- Icon Badge -->
+  <rect x="4" y="8" width="64" height="64" rx="16" fill="url(#brandGrad)" />
+  <!-- Phone outline inside icon -->
+  <rect x="18" y="16" width="36" height="48" rx="7" stroke="#FFFFFF" stroke-width="2.5" fill="none" opacity="0.9" />
+  <circle cx="36" cy="22" r="1.8" fill="#FFFFFF" />
+  <!-- 123 stylized inside screen -->
+  <text x="36" y="45" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="-0.5">123</text>
+  <rect x="30" y="54" width="12" height="2" rx="1" fill="#FFFFFF" opacity="0.8" />
+  <!-- Green pulse dot -->
+  <circle cx="62" cy="14" r="6" fill="url(#accentGrad)" stroke="#FFFFFF" stroke-width="2" />
+
+  <!-- Typography -->
+  <text x="80" y="38" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="24" font-weight="900" fill="#0F172A" letter-spacing="-0.5">
+    123 <tspan fill="#2563EB">MOBILE</tspan>
+  </text>
+  <text x="80" y="58" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#64748B" letter-spacing="1.5">
+    HOUSE &bull; BHARATPUR
+  </text>
+</svg>

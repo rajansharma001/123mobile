@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Express Smartphone Repair &amp; Services — 123 Mobile House | Bishal Chowk</title>
+  <meta name="description" content="Fast phone repair at Bishal Chowk, Bharatpur. 30-minute screen and battery replacement, water damage clean, charging port fix, and SIM activation. Free walk-in diagnosis.">
+  
+  <link rel="icon" type="image/png" href="assets/images/favicon-123.png">
+  <link rel="apple-touch-icon" href="assets/images/favicon-123.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Preloader (0.5 Second App-Style Splash) -->
+  <!-- Preloader (0.5 Second App-Style Splash) -->
+  <div id="sitePreloader" class="preloader">
+    <div class="preloader-content">
+      <div class="header-logo-badge" style="padding:10px 22px;border-radius:18px;box-shadow:0 12px 32px rgba(245,106,30,0.35);animation:badgePop 0.5s cubic-bezier(0.16, 1, 0.3, 1);">
+        <img src="assets/images/logo-official-full.png" alt="123 Mobile House" style="height:48px;width:auto;display:block;">
+      </div>
+      <div class="preloader-bar">
+        <div class="preloader-progress"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Top Location & Helpline Bar -->
+  <!-- Top Location & Helpline Bar -->
+  <div class="top-bar-strip">
+    <div class="w top-bar-content">
+      <div class="top-bar-location">
+        <svg class="top-bar-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C8F54A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <span>Bishal Chowk, Bharatpur, Chitwan &middot; Open Every Day 9 AM &ndash; 8 PM</span>
+      </div>
+      <div class="top-bar-phone">
+        <span>Direct Helpline: <a href="tel:+9779844338306" class="top-bar-phone-link">+977 9844338306</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="dk" style="position:sticky;top:0;z-index:900;border-bottom:1px solid rgba(42,38,99,0.7);backdrop-filter:blur(10px);">
+    <div class="w header-nav-row">
+      
+      <!-- Brand Logo Badge -->
+      <a href="index.html" class="brand-header-link" aria-label="123 Mobile House Home">
+        <div class="header-logo-badge">
+          <img src="assets/images/logo-official-full.png" alt="123 Mobile House Logo">
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nl" style="display:flex;gap:22px;font-weight:600;font-size:14.5px">
+        <a href="index.html">Home</a>
+        <a href="phones.html">Phones</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="services.html" style="color:#C8F54A;">Services &amp; Repair</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Visit &amp; Contact</a>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="header-actions">
+        <a class="btn sec header-cta-call" href="tel:+9779844338306">Call Now</a>
+        <button class="btn pri wa-open-trigger header-cta-wa">Ask on WhatsApp</button>
+        <button class="mobile-nav-toggle" id="mobileNavBtn" aria-label="Open Menu">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
+    <div class="mobile-drawer">
+      <div class="mobile-drawer-header">
+        <div class="header-logo-badge" style="padding:4px 10px;">
+          <img src="assets/images/logo-official-full.png" alt="123 Mobile House" style="height:28px;">
+        </div>
+        <button style="background:none;border:none;color:#fff;font-size:26px;cursor:pointer;" id="mobileDrawerClose">&times;</button>
+      </div>
+      <div class="mobile-drawer-links">
+        <a href="index.html" class="mobile-drawer-link"><svg class="ui-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Home</a>
+        <a href="phones.html" class="mobile-drawer-link"><svg class="ui-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg> Phones Catalog</a>
+        <a href="accessories.html" class="mobile-drawer-link"><svg class="ui-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg> Accessories &amp; Audio</a>
+        <a href="services.html" class="mobile-drawer-link" style="color:#C8F54A;font-weight:700;"><svg class="ui-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg> Repair &amp; Services</a>
+        <a href="about.html" class="mobile-drawer-link"><svg class="ui-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M5 21V7l8-4v18"></path><path d="M19 21V11l-6-3"></path><path d="M9 9v.01"></path><path d="M9 12v.01"></path><path d="M9 15v.01"></path><path d="M9 18v.01"></path></svg> About Us</a>
+        <a href="contact.html" class="mobile-drawer-link"><svg class="ui-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Visit &amp; Contact</a>
+      </div>
+      <div style="margin-top:auto;padding-top:24px;display:flex;flex-direction:column;gap:10px;">
+        <a href="tel:+9779844338306" class="btn sec" style="width:100%;height:44px;">Call +977 9844338306</a>
+        <button class="btn pri wa-open-trigger" style="width:100%;height:44px;">Chat on WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Header -->
+  <section class="dk" style="padding:60px 0 44px;border-bottom:1px solid #2A2663">
+    <div class="w">
+      <p class="eb">Certified Counter Workstation &bull; Bishal Chowk</p>
+      <h1 class="page-hero-title">
+        Express Phone Repair &amp; <span style="color:#C8F54A">SIM Services</span>
+      </h1>
+      <p class="p" style="max-width:680px;font-size:17px;margin-bottom:28px;">
+        Don't let a broken screen or dead battery disrupt your day. Most common repairs are inspected and fixed right at our counter within 30 to 45 minutes using certified parts with warranty.
+      </p>
+
+      <div style="display:flex;flex-wrap:wrap;gap:12px;">
+        <span style="border:1.5px solid #3A3585;border-radius:999px;padding:7px 16px;font-size:13.5px;font-weight:600;color:#C8F54A;">&check; Free Walk-in Diagnostics</span>
+        <span style="border:1.5px solid #3A3585;border-radius:999px;padding:7px 16px;font-size:13.5px;font-weight:600;color:#C8F54A;">&check; 30-Minute Screen &amp; Battery Turnaround</span>
+        <span style="border:1.5px solid #3A3585;border-radius:999px;padding:7px 16px;font-size:13.5px;font-weight:600;color:#C8F54A;">&check; Tested Before Handover</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Live Repair Docket Console -->
+  <section class="s lt" style="padding-top:48px;">
+    <div class="w">
+      
+      <div class="sh">
+        <div>
+          <p class="eb">Instant Estimate</p>
+          <h2 class="h2">Live Counter Diagnostic Console</h2>
+          <p class="p" style="margin-top:8px;max-width:560px;">Select your phone's brand and symptom to build your live repair docket and send it to our technician.</p>
+        </div>
+      </div>
+
+      <div class="g2 docket-grid">
+        
+        <!-- Diagnostic Console Steps -->
+        <div class="card" style="background:#fff;padding:32px">
+          <p style="margin:0 0 10px;font-size:12.5px;font-weight:700">STEP 1 &middot; SELECT BRAND</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px" id="docketBrandGroup">
+            <button class="chip on" data-brand="Samsung Galaxy">Samsung</button>
+            <button class="chip" data-brand="Apple iPhone">Apple</button>
+            <button class="chip" data-brand="Xiaomi / Redmi">Xiaomi</button>
+            <button class="chip" data-brand="Vivo">Vivo</button>
+            <button class="chip" data-brand="Oppo">Oppo</button>
+            <button class="chip" data-brand="Realme">Realme</button>
+            <button class="chip" data-brand="Infinix">Infinix</button>
+          </div>
+
+          <p style="font-size:12.5px;font-weight:700;margin:24px 0 10px">STEP 2 &middot; PICK SYMPTOM</p>
+          <div class="docket-symptom-grid" id="docketSymptomGroup">
+            <div class="symptom-card" data-fault="Screen &amp; Glass Replacement" data-time="30–45 Mins" style="border:1.5px solid #4F3BE8;background:#ECE9FF;border-radius:14px;padding:14px;cursor:pointer;">
+              <div style="display:flex;justify-content:space-between;gap:6px"><b>Screen &amp; Glass</b><span class="pill">30–45m</span></div>
+              <p class="p" style="font-size:13px;margin-top:4px">Cracked glass, black ink spots, touch unresponsive</p>
+            </div>
+            <div class="symptom-card" data-fault="Battery Replacement" data-time="20–30 Mins" style="border:1.5px solid #E1DFF3;background:#fff;border-radius:14px;padding:14px;cursor:pointer;">
+              <div style="display:flex;justify-content:space-between;gap:6px"><b>Battery Swap</b><span class="pill">20–30m</span></div>
+              <p class="p" style="font-size:13px;margin-top:4px">Battery drains fast, shuts down at 20%</p>
+            </div>
+            <div class="symptom-card" data-fault="Charging Port Module" data-time="30 Mins" style="border:1.5px solid #E1DFF3;background:#fff;border-radius:14px;padding:14px;cursor:pointer;">
+              <div style="display:flex;justify-content:space-between;gap:6px"><b>Charging Port</b><span class="pill">30m</span></div>
+              <p class="p" style="font-size:13px;margin-top:4px">Slow charge, cable loose, headphone jack fault</p>
+            </div>
+            <div class="symptom-card" data-fault="Water Damage Ultrasonic" data-time="1–2 Hours" style="border:1.5px solid #E1DFF3;background:#fff;border-radius:14px;padding:14px;cursor:pointer;">
+              <div style="display:flex;justify-content:space-between;gap:6px"><b>Water Damage</b><span class="pill">1–2h</span></div>
+              <p class="p" style="font-size:13px;margin-top:4px">Ultrasonic chemical bath, short-circuit check</p>
+            </div>
+          </div>
+
+          <p style="font-size:12.5px;font-weight:700;margin:24px 0 10px">STEP 3 &middot; PHONE MODEL</p>
+          <div class="fld">
+            <small>Model Name (Optional)</small>
+            <input type="text" id="docketModelInput" placeholder="e.g. Galaxy A55, iPhone 14, Redmi Note 13..." style="width:100%;border:none;outline:none;font-size:15px;font-weight:600;color:#12102B;padding-top:2px;background:transparent;">
+          </div>
+        </div>
+
+        <!-- Realistic Printed Receipt / Docket -->
+        <div>
+          <div style="transform:rotate(1.5deg);filter:drop-shadow(0 20px 36px rgba(18,16,43,.18));margin:0 8px 24px;">
+            <div class="rc">
+              <p style="display:block;font:800 18px 'Bricolage Grotesque',sans-serif;text-align:center">123 MOBILE HOUSE &bull; REPAIR DOCKET</p>
+              <p style="display:block;text-align:center;margin-bottom:6px;font-size:11px;">BISHAL CHOWK COUNTER &bull; BHARATPUR</p>
+              <div style="border-top:2px dashed #D3D0EA;margin:6px 0"></div>
+              <p><span>Brand</span><span style="font-weight:700" id="docBrand">Samsung Galaxy</span></p>
+              <p><span>Model</span><span style="font-weight:700" id="docModel">Specified at Counter</span></p>
+              <p><span>Service</span><span style="font-weight:700" id="docFault">Screen &amp; Glass Replacement</span></p>
+              <p><span>Estimated Time</span><span style="font-weight:700" id="docTime">30–45 Mins</span></p>
+              <p><span>Diagnostic Fee</span><span style="font-weight:700;color:#0F7A40;">FREE Walk-In</span></p>
+              <div style="border-top:2px dashed #D3D0EA;margin:6px 0"></div>
+              <p style="font-size:11.5px;color:#5E5A80;margin:0;">Tested on-site with warranty on replaced components.</p>
+            </div>
+            <div style="height:12px;background:radial-gradient(circle at 8px 12px,transparent 7px,#fff 7.5px) 0 0/16px 12px repeat-x"></div>
+          </div>
+
+          <button class="btn wa" id="docketWaBtn" style="width:100%;margin-bottom:10px;height:48px;font-size:15px;">
+            Send Docket to WhatsApp
+          </button>
+          <a class="btn sec" href="tel:+9779844338306" style="width:100%;height:44px;">Call Technician (+977 9844338306)</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Detailed Services Grid -->
+  <section class="s">
+    <div class="w">
+      
+      <div class="sh">
+        <div>
+          <p class="eb">Full Service Spectrum</p>
+          <h2 class="h2">What We Fix &amp; Provide</h2>
+        </div>
+      </div>
+
+      <div class="g3">
+
+        <!-- 1. Screen Replacement -->
+        <div class="card" style="padding:24px">
+          <div class="ph" style="height:200px;margin-bottom:16px;">
+            <img src="assets/images/tip-cracked-screen.jpg" alt="Screen Replacement">
+          </div>
+          <h3 class="t" style="font-size:20px;">Screen &amp; OLED Replacement</h3>
+          <p class="p" style="font-size:14px;margin-bottom:14px;">
+            Cracked glass, bleeding pixels, black screen, or broken touch. We install high-grade AMOLED and OLED panels with smooth 120Hz calibration.
+          </p>
+          <span class="pill">30–45 Min Average</span>
+        </div>
+
+        <!-- 2. Battery Swap -->
+        <div class="card" style="padding:24px">
+          <div class="ph" style="height:200px;margin-bottom:16px;">
+            <img src="assets/images/tip-battery-care.jpg" alt="Battery Replacement">
+          </div>
+          <h3 class="t" style="font-size:20px;">Battery Swap &amp; Health</h3>
+          <p class="p" style="font-size:14px;margin-bottom:14px;">
+            Phone dying after 2 hours? Swollen back panel? Fresh original-capacity battery installed with calibrated battery percentage readout.
+          </p>
+          <span class="pill">20–30 Min Average</span>
+        </div>
+
+        <!-- 3. Water Damage -->
+        <div class="card" style="padding:24px">
+          <div class="ph" style="height:200px;margin-bottom:16px;">
+            <img src="assets/images/tip-water-damage.jpg" alt="Water Damage Cleanup">
+          </div>
+          <h3 class="t" style="font-size:20px;">Water Damage Ultrasonic Rescue</h3>
+          <p class="p" style="font-size:14px;margin-bottom:14px;">
+            Dropped in water? Don't put it in rice! Bring it immediately to Bishal Chowk for chemical decontamination, corrosion removal, and IC drying.
+          </p>
+          <span class="pill">Deep Diagnostic</span>
+        </div>
+
+        <!-- 4. Charging Port & Mic -->
+        <div class="card" style="padding:24px">
+          <div class="ph" style="height:200px;margin-bottom:16px;">
+            <img src="assets/images/apple-fix-bench.jpg" alt="Charging Port Repair">
+          </div>
+          <h3 class="t" style="font-size:20px;">Charging Port &amp; Mic Fix</h3>
+          <p class="p" style="font-size:14px;margin-bottom:14px;">
+            Have to hold your cable at an angle to charge? Callers can't hear your voice? We clean or replace the sub-board charging module cleanly.
+          </p>
+          <span class="pill">30 Min Average</span>
+        </div>
+
+        <!-- 5. Camera & Speaker -->
+        <div class="card" style="padding:24px">
+          <div class="ph" style="height:200px;margin-bottom:16px;">
+            <img src="assets/images/iphone-repair-hands.jpg" alt="Camera and Hardware Fix">
+          </div>
+          <h3 class="t" style="font-size:20px;">Camera Lens &amp; Speaker</h3>
+          <p class="p" style="font-size:14px;margin-bottom:14px;">
+            Broken rear camera glass causing blurry photos, crackling ear speaker, or malfunctioning volume buttons sorted quickly.
+          </p>
+          <span class="pill">Hardware Care</span>
+        </div>
+
+        <!-- 6. SIM Cards & Recharge -->
+        <div class="card" style="padding:24px">
+          <div class="ph" style="height:200px;margin-bottom:16px;">
+            <img src="assets/images/hero-repair-lab.jpg" alt="SIM Cards and Recharge">
+          </div>
+          <h3 class="t" style="font-size:20px;">SIM Cards &amp; Data Packs</h3>
+          <p class="p" style="font-size:14px;margin-bottom:14px;">
+            Get a new NTC or Ncell prepaid SIM card activated on the spot. Instant recharge, unlimited data packages, and voice plans set up same-day.
+          </p>
+          <span class="pill">NTC &bull; Ncell Official</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4-Step Process Section -->
+  <section class="lt" style="padding:60px 0;border-top:1px solid #E1DFF3;">
+    <div class="w">
+      <div class="sh">
+        <div>
+          <p class="eb">How We Work</p>
+          <h2 class="h2">Transparent 4-Step Repair Experience</h2>
+        </div>
+      </div>
+
+      <div class="g4">
+        <div class="card" style="background:#fff;padding:24px;">
+          <div class="num" style="margin-bottom:16px;">1</div>
+          <h4 style="font-size:18px;margin-bottom:8px;font-weight:700;">Walk In to Bishal Chowk</h4>
+          <p class="p" style="font-size:13.5px;">Bring your device to our store. We run a free diagnostic test right in front of you.</p>
+        </div>
+        <div class="card" style="background:#fff;padding:24px;">
+          <div class="num" style="margin-bottom:16px;">2</div>
+          <h4 style="font-size:18px;margin-bottom:8px;font-weight:700;">Transparent Quote</h4>
+          <p class="p" style="font-size:13.5px;">We confirm the exact cost and estimated repair time. No hidden surprises or extra charges.</p>
+        </div>
+        <div class="card" style="background:#fff;padding:24px;">
+          <div class="num" style="margin-bottom:16px;">3</div>
+          <h4 style="font-size:18px;margin-bottom:8px;font-weight:700;">Express Counter Fix</h4>
+          <p class="p" style="font-size:13.5px;">Watch the repair or grab a tea nearby. Most issues are resolved in 30 to 45 minutes.</p>
+        </div>
+        <div class="card" style="background:#fff;padding:24px;">
+          <div class="num" style="margin-bottom:16px;">4</div>
+          <h4 style="font-size:18px;margin-bottom:8px;font-weight:700;">Quality Verification</h4>
+          <p class="p" style="font-size:13.5px;">We test touch responsiveness, cameras, microphone, and charging before you take it home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="dk">
+    <div class="w" style="padding-top:60px;padding-bottom:36px">
+      <div class="site-footer-grid">
+        <div>
+          <div class="header-logo-badge" style="display:inline-flex;padding:5px 12px;margin-bottom:14px;">
+            <img src="assets/images/logo-official-full.png" alt="123 Mobile House" style="height:32px;">
+          </div>
+          <p class="p" style="max-width:300px;font-size:14px;line-height:1.6;">
+            Bishal Chowk, Bharatpur, Chitwan. Official smartphones, genuine accessories, SIM cards, and quick repair support.
+          </p>
+        </div>
+
+        <div>
+          <p style="font-weight:700;margin-bottom:12px;color:#fff;">Browse Catalog</p>
+          <p class="p" style="line-height:2;font-size:14px;">
+            <a href="phones.html">Smartphones Catalog</a><br>
+            <a href="accessories.html">Covers &amp; Audio</a><br>
+            <a href="services.html">Express Repair</a><br>
+            <a href="about.html">About 123 Mobile</a><br>
+            <a href="contact.html">Store Location</a>
+          </p>
+        </div>
+
+        <div>
+          <p style="font-weight:700;margin-bottom:12px;color:#fff;">Store Contact</p>
+          <p class="p" style="line-height:2;font-size:14px;">
+            Helpline: +977 9844338306<br>
+            WhatsApp: +977 9844338306<br>
+            Bishal Chowk, Bharatpur<br>
+            Open 7 Days &bull; 9 AM &ndash; 8 PM
+          </p>
+        </div>
+
+        <div class="card dkc" style="background:#1E1B45;border-color:#3A3585;padding:20px">
+          <h4 style="color:#C8F54A;font-size:17px;margin-bottom:8px;">Counter Repair Call</h4>
+          <p class="p" style="font-size:13.5px;margin-bottom:14px;">Speak directly with our technician about your phone problem.</p>
+          <a class="btn pri" href="tel:+9779844338306" style="width:100%;height:40px;font-size:13px">Call +977 9844338306</a>
+        </div>
+      </div>
+
+      <div style="border-top:1px solid #2A2663;padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:13px;color:#807DA0">
+        <p>&copy; 2026 123 Mobile House &middot; Bishal Chowk, Bharatpur, Chitwan, Nepal.</p>
+        <p>Demo homepage prepared by Rajan Sharma, Website Developer.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Trigger & Interactive Popup Card -->
+    <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+<div class="floating-wa-wrapper">
+    <div class="wa-chat-popup" id="waChatPopup">
+      <div class="wa-popup-header">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div class="header-logo-badge" style="padding:2px 6px;">
+            <img src="assets/images/logo-official-full.png" alt="123" style="height:20px;">
+          </div>
+          <div>
+            <h4 style="margin:0;font-size:14px;color:#12102B;">123 Mobile House</h4>
+            <span style="font-size:11.5px;color:#0F7A40;font-weight:600;">● Online at Bishal Chowk</span>
+          </div>
+        </div>
+        <button class="wa-popup-close" id="waPopupClose">&times;</button>
+      </div>
+
+      <div class="wa-popup-body">
+        <p style="margin:0 0 10px;font-size:13px;color:#4C4A6B;">Namaste! What repair issue or question can we help with today?</p>
+        
+        <div class="wa-quick-chips">
+          <button class="wa-quick-chip" data-msg="Hello! How much does a screen replacement cost for my phone?">Screen Cost?</button>
+          <button class="wa-quick-chip" data-msg="Hello! Can you replace my phone's battery today in 30 minutes?">Battery Swap?</button>
+          <button class="wa-quick-chip" data-msg="Hello! My phone fell in water, can you inspect it today?">Water Damage?</button>
+          <button class="wa-quick-chip" data-msg="Hello! Where is your repair counter located in Bishal Chowk?">Store Directions?</button>
+        </div>
+
+        <div class="wa-input-box">
+          <textarea class="wa-custom-textarea" id="waCustomTextarea" placeholder="Describe the phone problem..."></textarea>
+          <button class="wa-send-btn" id="waSendCustomBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            Send on WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <button class="wa-trigger-btn" id="waFloatingTrigger" aria-label="Open WhatsApp Chat">
+      <span class="pulse-badge"></span>
+      <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.064-2.146-.537-1.748-.724-2.859-2.508-2.949-2.625-.088-.117-.714-.95-.714-1.811 0-.862.449-1.286.61-1.46.16-.175.352-.219.47-.219.117 0 .235.001.338.006.109.005.253-.042.396.302.145.351.498 1.216.541 1.305.044.088.073.191.015.308-.058.117-.088.191-.175.293-.088.102-.185.228-.264.306-.088.088-.179.184-.077.359.102.176.455.751.977 1.216.671.597 1.236.782 1.412.87.176.088.278.073.382-.044.102-.117.44-.513.557-.689.118-.175.235-.146.396-.088.161.059 1.028.485 1.204.573.176.088.293.132.338.205.044.074.044.426-.1.831z"/></svg>
+    </button>
+  </div>
+
+  <!-- Shared Script -->
+  <script>
+    const WA_NUMBER = '9779844338306';
+    const waPopup = document.getElementById('waChatPopup');
+    const waTrigger = document.getElementById('waFloatingTrigger');
+    const waClose = document.getElementById('waPopupClose');
+    const waTextarea = document.getElementById('waCustomTextarea');
+    const waSendBtn = document.getElementById('waSendCustomBtn');
+    const quickChips = document.querySelectorAll('.wa-quick-chip');
+    const openTriggers = document.querySelectorAll('.wa-open-trigger');
+
+    function toggleWaPopup(openState) {
+      if (openState !== undefined) {
+        if (openState) {
+          waPopup.classList.add('active');
+          waTextarea.focus();
+        } else {
+          waPopup.classList.remove('active');
+        }
+      } else {
+        const isActive = waPopup.classList.toggle('active');
+        if (isActive) waTextarea.focus();
+      }
+    }
+
+    if (waTrigger) waTrigger.addEventListener('click', () => toggleWaPopup());
+    if (waClose) waClose.addEventListener('click', () => toggleWaPopup(false));
+
+    openTriggers.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        toggleWaPopup(true);
+      });
+    });
+
+    quickChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        waTextarea.value = chip.getAttribute('data-msg');
+        waTextarea.focus();
+      });
+    });
+
+    function sendWaMessage() {
+      const customText = waTextarea.value.trim() || 'Hello 123 Mobile House! I need help with phone repair.';
+      window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(customText)}`, '_blank');
+      toggleWaPopup(false);
+    }
+
+    if (waSendBtn) waSendBtn.addEventListener('click', sendWaMessage);
+    if (waTextarea) {
+      waTextarea.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && !e.shiftKey) {
+          e.preventDefault();
+          sendWaMessage();
+        }
+      });
+    }
+
+    // Live Docket Interactivity
+    const brandChips = document.querySelectorAll('#docketBrandGroup .chip');
+    const symptomCards = document.querySelectorAll('#docketSymptomGroup .symptom-card');
+    const modelInput = document.getElementById('docketModelInput');
+    const docBrand = document.getElementById('docBrand');
+    const docModel = document.getElementById('docModel');
+    const docFault = document.getElementById('docFault');
+    const docTime = document.getElementById('docTime');
+    const docketWaBtn = document.getElementById('docketWaBtn');
+
+    let currentBrand = 'Samsung Galaxy';
+    let currentFault = 'Screen & Glass Replacement';
+    let currentTime = '30–45 Mins';
+
+    function updateLiveDocket() {
+      const modelVal = modelInput.value.trim() || 'Specified at Counter';
+      docBrand.textContent = currentBrand;
+      docFault.textContent = currentFault;
+      docTime.textContent = currentTime;
+      docModel.textContent = modelVal;
+    }
+
+    brandChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        brandChips.forEach(c => c.classList.remove('on'));
+        chip.classList.add('on');
+        currentBrand = chip.getAttribute('data-brand') || chip.textContent.trim();
+        updateLiveDocket();
+      });
+    });
+
+    symptomCards.forEach(card => {
+      card.addEventListener('click', () => {
+        symptomCards.forEach(c => {
+          c.style.borderColor = '#E1DFF3';
+          c.style.background = '#fff';
+        });
+        card.style.borderColor = '#4F3BE8';
+        card.style.background = '#ECE9FF';
+        currentFault = card.getAttribute('data-fault') || 'Screen & Glass Replacement';
+        currentTime = card.getAttribute('data-time') || '30–45 Mins';
+        updateLiveDocket();
+      });
+    });
+
+    if (modelInput) modelInput.addEventListener('input', updateLiveDocket);
+
+    if (docketWaBtn) {
+      docketWaBtn.addEventListener('click', () => {
+        const modelVal = modelInput.value.trim() || currentBrand;
+        const msg = `Namaste 123 Mobile House, mero ${modelVal} ma ${currentFault} problem chha. Bishal Chowk counter ma repair cost ra time barema estimate dinus.`;
+        window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
+      });
+    }
+
+    // Mobile Navigation Drawer
+    const mobileNavBtn = document.getElementById('mobileNavBtn');
+    const mobileDrawerOverlay = document.getElementById('mobileDrawerOverlay');
+    const mobileDrawerClose = document.getElementById('mobileDrawerClose');
+
+    function openMobileDrawer() {
+      mobileDrawerOverlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileDrawer() {
+      mobileDrawerOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    if (mobileNavBtn) mobileNavBtn.addEventListener('click', openMobileDrawer);
+    if (mobileDrawerClose) mobileDrawerClose.addEventListener('click', closeMobileDrawer);
+    if (mobileDrawerOverlay) {
+      mobileDrawerOverlay.addEventListener('click', (e) => {
+        if (e.target === mobileDrawerOverlay) closeMobileDrawer();
+      });
+    }
+
+    // Preloader Dismissal (0.5s / 500ms)
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('sitePreloader');
+      if (preloader) {
+        setTimeout(() => {
+          preloader.classList.add('fade-out');
+          setTimeout(() => { preloader.remove(); }, 350);
+        }, 500);
+      }
+    });
+
+    // Scroll Reveal
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-revealed');
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.card').forEach(c => observer.observe(c));
+    }
+      // Back to Top Button & Smooth Scrolling
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    if (backToTopBtn) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 280) {
+          backToTopBtn.classList.add('visible');
+        } else {
+          backToTopBtn.classList.remove('visible');
+        }
+      });
+
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+
+  </script>
+
+</body>
+</html>
